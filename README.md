@@ -97,7 +97,7 @@ Here we describe just a handful of tools included in this template. See the [./m
 
 ### neovim
 
-Neovim configured using [nixvim](https://github.com/nix-community/nixvim) is included across all configurations. It is also exposed as a flake app, so you can launch it directly using `nix run github:juspay/nixos-unified-template#neovim`. See `neovim/nixvim.nix`.
+Neovim configured using [nixvim](https://github.com/nix-community/nixvim) is included across all configurations. It is also exposed as a flake app, so you can launch it directly using `nix run github:jvssdev/nix#neovim`. See `neovim/nixvim.nix`.
 
 ### starship
 
