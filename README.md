@@ -14,10 +14,10 @@ Under the hood, it uses [nixos-unified]. See [`./modules`](modules/) to see what
 
 [^neovim]: Wanna try before you buy?
     ```
-    git clone https://github.com/srid/rust-nix-template
+    git clone https://github.com/jvssdev/nix
     cd rust-nix-template
     nix develop
-    nix run github:juspay/nixos-unified-template#neovim
+    nix run github:jvssdev/nix#neovim
     # Type `SPC f f` to open a .rs file
     # Wait for rust-analyzer to finish; go to a symbol and type K
     ```
@@ -46,7 +46,7 @@ If you use, or intend to use, [NixOS]:
     cd /etc/nixos
     nix --extra-experimental-features "nix-command flakes" \
       run nixpkgs#omnix -- \
-      init github:juspay/nixos-unified-template#nixos -o .
+      init github:jvssdev/nix#nixos -o .
     # Replace HOSTNAME with the hostname you entered above.
     mv configuration.nix hardware-configuration.nix ./configurations/nixos/HOSTNAME/
     nix --extra-experimental-features "nix-command flakes" run
@@ -64,7 +64,7 @@ If you are on macOS or running other Linux distros:
     ```
 1. Open a new terminal; Initialize[^omnix] your Nix configuration using this repo as template:
     ```sh-session
-    nix run nixpkgs#omnix -- init github:juspay/nixos-unified-template -o ~/nixconfig
+    nix run nixpkgs#omnix -- init github:jvssdev/nix -o ~/nixconfig
     cd ~/nixconfig
     ```
     <img width="1092" alt="image" src="https://github.com/user-attachments/assets/1341d200-d894-488c-ba74-42d8830cc6f7">
